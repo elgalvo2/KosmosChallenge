@@ -15,13 +15,18 @@ const formSlice = createSlice({
         },
         removeField:function(state,action){
             let form = [...state.form_fields]
-            let index = form.findIndex(field=>field._id == action.payload._id)
-            form.slice(1,index)
-            state.form_fields = form;
+            let index = form.findIndex(field=>field._id == action.payload)
+            console.info(index,'este es el formulario')
+            
+            form.splice(index,1)
+            state.form_fields = [...form]
+        },
+        destroyForm:function(state,action){
+            state.form_fields = []
         }
     }
 })
 
 
-export const {addField,removeField} = formSlice.actions
+export const {addField,removeField,destroyForm} = formSlice.actions
 export default formSlice.reducer
