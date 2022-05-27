@@ -1,0 +1,47 @@
+.formAtron {
+    max-width: 80%;
+    min-height: 400px;
+    margin: 0px auto;
+    margin-top: 5%;
+    border: 1px solid gray;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 1px 1px 1px gray, 2px 2px 2px gray, 3px 3px 3px gray;
+}
+
+.visor {
+    padding: 10px;
+    border-right: 1px solid gray;
+}
+
+.form {
+    padding: 10px;
+}
+
+.back {
+    background-color: #282c34;
+    color: aliceblue;
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 15px;
+
+}
+
+.back>img {
+
+    height: 7vmin;
+    pointer-events: none;
+    animation: spin infinite 20s linear;
+}
+
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

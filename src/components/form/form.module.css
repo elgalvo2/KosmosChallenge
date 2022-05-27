@@ -1,0 +1,17 @@
+.form{
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: start;
+    row-gap: 10px;
+    padding: 20px;
+}
+
+.optionVisor{
+    width: 80%;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

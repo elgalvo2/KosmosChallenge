@@ -1,0 +1,11 @@
+.formContainer{
+    padding: 20px;
+    border: 1px solid gray;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: start;
+}
